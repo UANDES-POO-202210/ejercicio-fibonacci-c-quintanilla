@@ -2,24 +2,21 @@ var num = require('fs');
 var num_m = num.readFileSync('numero.txt', 'utf8');
 let num_f = num_m.toString();
 
-
-function fibonacci(num){
 var lista=[0,1];
-var a = 0;
-var b = 1;
-var c=0;
-}
-/*
-for (c<num, var res=0,){
-    a+b=res;
+var fn0 = 0;
+var fn1 = 1;
+var res=0;
 
-    c++;
+for (var c=1 ; c < num_f;){
+    res= fn0 + fn1;
+    console.log(res)
+    fn0=fn1;
+    fn1=res
+        c++;
 
-}
-
-return res;
 }
 
-console.log("El resultado de la serie de fibonaci para el numero", num, "es:");
+console.log("El resultado de la serie de fibonaci para el numero es:");
 console.log(res);
-*/
+
+
