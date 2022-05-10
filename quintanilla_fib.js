@@ -7,9 +7,9 @@ var fn0 = 0;
 var fn1 = 1;
 var res=0;
 
+
 for (var c=1 ; c < num_f;){
     res= fn0 + fn1;
-    console.log(res)
     fn0=fn1;
     fn1=res
         c++;
